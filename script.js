@@ -1,16 +1,15 @@
 //complete this code
 class Person {
-    age;
-    name;
+
     constructor(name,age){
-      this.name=name;
-      this.age=age;
+      this._name=name;
+      this._age=age;
     }
     set setAge(age){
-        this.age=age;
+        this._age=age;
     }
     get getName(){
-        return this.name;
+        return this._name;
     }
 }
 
@@ -32,7 +31,7 @@ class Teacher extends Person {
     }
 }
 
-let student1=new Student('Love',21);
+let student1=new Student('Ramesh',21);
 console.log(student1);
 // student1.teach();
 student1.study();
